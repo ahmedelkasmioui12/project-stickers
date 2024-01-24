@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: azure;
+            margin: 0%;
+            padding: 0%;
+            position: fixed;
+            top: 0%;
+            width: 100%;
+            z-index: 1;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            padding: 30px;
+            margin: 7px;
+            display: block;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            background-color: gray;
+        }
+
+        .x {
+            margin-right: 30px;
+            height: 100px;
+            float: right;
+        }
+    </style>
+    <style>
+        /* CSS styles */
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product {
+            width: calc(25% - 20px);
+            margin-bottom: 20px;
+        }
+
+        .product h2 {
+            margin-top: 0;
+        }
+
+        .product img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        #product-details {
+            display: none;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/magnifyjs/dist/magnify.js"></script>
+</head>
+<body style="background-color: antiquewhite;">
+<div>
+    <ul>
+        <li><a href="w">acueille</a></li>
+        <li><a href="w">contact</a></li>
+        <li><a href="w">news</a></li>
+        <li class="x"><img src="logo.png" class="x" width="100%" height="30px" alt="logo"></li>
+    </ul>
+</div>
+<title>Ecommerce Page</title>
+
+<div class="product-list" style="margin-top: 100px;">
+    <div class="product">
+        <h2>Product 1</h2>
+        <img src="programing.jpeg" alt="Product 1 Image" onclick="zoomImage(this)">
+        <p>Product 1</p>
+        <button onclick="showProductDetails(1)" style="
+        background-color: brown ;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;" >View Details</button>
+        <button  style="
+        background-color: #FFA500;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;"><a href="login.php" style="text-decoration: none; color: black;">ACHETER</a></button>
+    </div>
+    <div class="product">
+        <h2>Product 2</h2>
+        <img src="pro1.jpeg" alt="Product 2 Image" onclick="zoomImage(this)">
+        <p>Product 2</p>
+        <button onclick="showProductDetails(2)" style="
+        background-color: brown ;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;" >View Details</button>
+        <button  style="
+        background-color: #FFA500;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;"><a href="login.php" style="text-decoration: none; color: black;">ACHETER</a></button>
+    </div>
+    <div class="product">
+        <h2>Product 3</h2>
+        <img src="pro2.jpg" alt="Product 3 Image" onclick="zoomImage(this)">
+        <p>Product 3</p>
+        <button onclick="showProductDetails(3)" style="
+        background-color: brown ;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;" >View Details</button>
+        <button  style="
+        background-color: #FFA500;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;"><a href="login.php" style="text-decoration: none; color: black;">ACHETER</a></button>
+    </div>
+    <div class="product">
+        <h2>Product 4</h2>
+        <img src="pro3.jpg" alt="Product 4 Image" onclick="zoomImage(this)">
+        <p>Product 4</p>
+        <button onclick="showProductDetails(4)" style="
+        background-color: brown ;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;" >View Details</button>
+        <button  style="
+        background-color: #FFA500;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;"><a href="login.php" style="text-decoration: none; color: black;">ACHETER</a></button>
+    </div>
+    <!-- Add more product items as needed -->
+</div>
+
+<div class="product-list">
+    <div class="product">
+        <h2>Product 1</h2>
+        <img src="music.jpg" alt="Product 1 Image" onclick="zoomImage(this)">
+        <p>Product 1</p>
+        <button onclick="showProductDetails(5)" style="
+        background-color: brown ;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;" >View Details</button>
+        <button  style="
+        background-color: #FFA500;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;"><a href="login.php" style="text-decoration: none; color: black;">ACHETER</a></button>
+    </div>
+    <div class="product">
+        <h2>Product 2</h2>
+        <img src="wedding.webp" alt="Product 2 Image" onclick="zoomImage(this)">
+        <p>Product 2</p>
+        <button onclick="showProductDetails(6)" style="
+        background-color: brown ;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;" >View Details</button>
+        <button  style="
+        background-color: #FFA500;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;"><a href="login.php" style="text-decoration: none; color: black;">ACHETER</a></button>
+    </div>
+    <div class="product">
+        <h2>Product 3</h2>
+        <img src="Tshirt.jpeg" alt="Product 3 Image" onclick="zoomImage(this)">
+        <p>Product 3</p>
+        <button onclick="showProductDetails(7) "style="
+        background-color: brown ;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;" >View Details</button>
+        <button  style="
+        background-color: #FFA500;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;"><a href="login.php" style="text-decoration: none; color: black;">ACHETER</a></button>
+    </div>
+    <div class="product">
+        <h2>mon choix</h2>
+        <img src="mon choix.png" alt="Product 4 Image" onclick="zoomImage(this)">
+        <p>mon choix</p>
+        <button onclick="showProductDetails()"  style="
+        background-color: #FFA500;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer; text-align: center;"><a href="choix.php" style="text-decoration: none; color: black;" >Commander </a></button>
+       
+    </div>
+    <!-- Add more product items as needed -->
+</div>
+
+<div id="product-details">
+    <!-- Product details will be dynamically inserted here -->
+</div>
+
+
+
+<script>
+    var cart = {}; // Object to store the cart items and quantities
+
+    function showProductDetails(productId) {
+        var productDetails = getProductDetails(productId);
+        var productDetailsDiv = document.getElementById("product-details");
+       alert ( `
+           ${productDetails.name}
+              ${productDetails.description}
+              Price: ${productDetails.price}
+          `
+ )
+        productDetailsDiv.style.display = "block";
+    }
+
+    function addToCart(productId) {
+        if (cart.hasOwnProperty(productId)) {
+            cart[productId]++;
+        } else {
+            cart[productId] = 1;
+        }
+
+        updateCartDisplay();
+    }
+
+    function updateCartDisplay() {
+        var cartDisplay = document.getElementById("cart-display");
+        var cartSummary = "";
+
+        for (var productId in cart) {
+            var productDetails = getProductDetails(productId);
+            var quantity = cart[productId];
+            cartSummary += `<p>${productDetails.name} x ${quantity}</p>`;
+        }
+
+        cartDisplay.innerHTML = cartSummary;
+    }
+
+    function getProductDetails(productId) {
+        // Function to retrieve product details from an API or database
+        // Replace this with your own implementation to fetch the product details
+        // Example code for demonstration purposes:
+        var productData = {
+            1: {
+                name: "Product 1",
+                description: "Description of Product 1",
+                price: "10"
+            },
+            2: {
+                name: "Product 2",
+                description: "Description of Product 2",
+                price: "15"
+            },
+            3: {
+                name: "Product 3",
+                description: "Description of Product 3",
+                price: "20"
+            },
+            4: {
+                name: "Product 4",
+                description: "Description of Product 4",
+                price: "25"
+            }
+            // Add more product details as needed
+        };
+
+        return productData[productId];
+    }
+
+    function zoomImage(img) {
+        // Use Magnify.js to enable image zooming
+        new Magnify(img);
+    }
+</script>
+</body>
+</html>
